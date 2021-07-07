@@ -1,0 +1,11 @@
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# 统一代码风格，vue手脚架3隐藏了，不代表不需要，如果以后成为组长这个一定需要添加
