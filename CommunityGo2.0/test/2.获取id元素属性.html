@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>获取id元素属性</title>
+  <style>
+    #stylediv {
+      width: 100%;
+      height: 200px;
+      background-color: rgb(150, 235, 139);
+      color: blue;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="stylediv">
+      <button @click="attribute">获取属性</button>
+      <p id="height"></p>
+      <p id="width"></p>
+      <p id="color"></p>
+      <p id="backgroundcolor"></p>
+    </div>
+  </div>
+  
+  <!-- VUE导入 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    var app = new Vue({
+      el: "#app",
+      data: {
+
+      },
+      methods: {
+        attribute() {
+          const height = window.getComputedStyle(stylediv).height;
+          console.log(window.getComputedStyle(stylediv).height)
+          const width = window.getComputedStyle(stylediv).width;
+          const color = window.getComputedStyle(stylediv).color;
+          document.getElementById("height").innerHTML = height;
+          document.getElementById("width").innerHTML = width;
+          document.getElementById("color").innerHTML = color;
+        }
+      }
+    })
+
+  </script>
+</body>
+
+</html>

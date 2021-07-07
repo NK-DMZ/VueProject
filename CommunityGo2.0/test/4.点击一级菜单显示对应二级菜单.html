@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>练习</title>
+    <style>
+        .active{
+            color: red;
+        }
+        .random{
+            width: 100px;
+            height: 50px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>点击哪一项哪一项就变红</h1>
+        <ul>
+            <!-- <li v-for="(item,index) in options" :class="{active:i==index}" @click="getclass(index)">{{item}}</li> -->
+            <li v-for="(item,index) in options" :class="{active:i==index}" @click="getclass(index)" >
+                {{item}}
+                <ul v-if="item.isshow">
+                    <li><div class="random"></div><div class="random" style="background-color: blueviolet;"></div></li>
+                </ul>                
+            </li>
+        </ul>
+    </div>
+
+    <!-- VUE导入 -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        var app=new Vue({
+            el:"#app",
+            data:{
+                options:['早餐','中餐','下午茶','晚餐'],
+                i:0,
+                index:0,
+                isactive:false,
+                isshow:true
+            },
+            methods:{
+                getclass:function(index){
+                    this.index=index;
+                    this.i=this.index;
+                    options.isshow = !options.isshow;
+                },
+            }
+        })
+    </script>
+</body>
+</html>

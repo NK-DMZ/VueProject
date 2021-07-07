@@ -1,0 +1,247 @@
+<style>
+  #ProMenu {
+    width: 200px;
+    clear: both;
+    float: left;
+  }
+
+  #ProMenu .title {
+    width: 200px;
+    height: 25px;
+    background: url(images/bg.png) left -117px;
+    float: left;
+    clear: both;
+    line-height: 25px;
+  }
+
+  #ProMenu span {
+    float: left;
+    width: 200px;
+  }
+
+  #ProMenu a {
+    display: block;
+    width: 188px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    border-bottom: 1px solid #832B00;
+    margin-left: 1px;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    background: url(images/bg.png) -600px -60px;
+  }
+
+  #ProMenu a:hover {
+    background: #FFD5BF url(images/menu_bg_2.gif) no-repeat 180px;
+  }
+
+  #ProMenu span {
+    float: left;
+  }
+
+  #ProMenu .drop {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    border: 1px solid #581800;
+    overflow: hidden;
+    float: left;
+  }
+
+  #ProMenu .drop a {
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #832B00;
+    text-align: center;
+    margin: 0;
+    margin-top: -1px;
+    padding-left: 0;
+  }
+
+  #ProList {
+    width: 200px;
+    display: inline;
+    float: left;
+  }
+
+  #ProList li {
+    width: 60px;
+    padding: 2px 0 0 25px;
+    float: left;
+  }
+
+  #ProList li img {
+    width: 58px;
+    height: 58px;
+    border: 1px solid #CCC;
+    float: left;
+  }
+
+  #ProList h1 {
+    width: 60px;
+    float: left;
+    text-align: center;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    font-size: 12px;
+    float: left;
+    color: #006699;
+    cursor: pointer;
+  }
+
+  #ProList h2 {
+    width: 60px;
+    float: left;
+    text-align: center;
+    line-height: 16px;
+    height: 16px;
+    overflow: hidden;
+    font-size: 12px;
+    float: left;
+    color: #FF0000;
+    cursor: pointer;
+  }
+
+  #ProList .title {
+    width: 200px;
+    height: 25px;
+    background: #832b00 url(images/bg.png) -411px -187px;
+    float: left;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  #ProList .more {
+    width: 140px;
+    border: 0;
+    background: none;
+    text-align: right;
+    float: left;
+  }
+
+  #ProList .more a {
+    font-size: 12px;
+    color: #999;
+  }
+
+</style>
+<div id="ProMenu">
+  <li>
+    <span>
+      <a href="" id="DropBM1" onmouseover="Play2(1)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM1" class="drop" onmouseover="Play2(1)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <!-- <span>
+      <a href="" id="DropBM2" onmouseover="Play2(2)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM2" class="drop" onmouseover="Play2(2)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM3" onmouseover="Play2(3)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM3" class="drop" onmouseover="Play2(3)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM4" onmouseover="Play2(4)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM4" class="drop" onmouseover="Play2(4)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM5" onmouseover="Play2(5)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM5" class="drop" onmouseover="Play2(5)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM6" onmouseover="Play2(6)" onmouseout="Play2(0)">新客网</a>
+      <span id="DropM6" class="drop" onmouseover="Play2(6)" onmouseout="Play2(0)">
+        <a href="class">新客网特效</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM7" onmouseover="Play2(7)" onmouseout="Play2(0)">类别一</a>
+      <span id="DropM7" class="drop" onmouseover="Play2(7)" onmouseout="Play2(0)">
+        <a href="class">小类别7</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM8" onmouseover="Play2(8)" onmouseout="Play2(0)">类别一</a>
+      <span id="DropM8" class="drop" onmouseover="Play2(8)" onmouseout="Play2(0)">
+        <a href="class">小类别8</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM9" onmouseover="Play2(9)" onmouseout="Play2(0)">类别一</a>
+      <span id="DropM9" class="drop" onmouseover="Play2(9)" onmouseout="Play2(0)">
+        <a href="class">小类别9</a>
+      </span>
+    </span>
+    <span>
+      <a href="" id="DropBM10" onmouseover="Play2(10)" onmouseout="Play2(0)">类别一</a>
+      <span id="DropM10" class="drop" onmouseover="Play2(10)" onmouseout="Play2(0)">
+        <a href="class">小类别10</a>
+      </span>
+    </span> -->
+    <script>
+      // JavaScript Document
+      /*
+       *
+       *滑门效果类
+       *2009-3-1
+       */
+      function Qlide() {
+        this.DivId = "";
+        this.DivCount = 0;
+        this.DivNum = 1;
+        //参数设置init(divid,divcount,num) =>[DIV名称的前面部如：div1,div2取div为divid,显则无效!][DIV总数][默认显示第num个DIV/可为空]
+        this.init = function (divid, divcount, num) {
+          this.DivId = divid;
+          this.DivCount = (isNaN(divcount)) ? 0 : divcount;
+          if (num != "") {
+            this.DivNum = (isNaN(num)) ? 0 : num;
+          }
+          this.play(num);
+        }
+        //进行
+        this.play = function (num) {
+          for (var i = 1; i <= this.DivCount; i++) {
+            if (document.getElementById(this.DivId + String(i)) != null) {
+              if (num == i)
+                document.getElementById(this.DivId + String(i)).style.display = "";
+              else
+                document.getElementById(this.DivId + String(i)).style.display = "none";
+            }
+          }
+        }
+      }
+      var d2 = new Qlide();
+      d2.init("DropM", 10, 0);
+      var b;
+
+      function Play2(id) {
+        if (id != 0) {
+          document.getElementById("DropBM" + id).style.background =
+            "#FFD5BF url(style/images/menu_bg_2.gif) no-repeat 180px";
+          b = id;
+        } else {
+
+          document.getElementById("DropBM" + b).style.background = "url(style/images/bg.png) -600px -60px";
+        }
+        d2.play(id);
+      }
+
+    </script>
+  </li>
+</div>
+<div class="bottom">
+</div>
+</div>

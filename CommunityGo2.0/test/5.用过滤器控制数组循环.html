@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="example">
+    <div>
+      <button @click='concat'>concat</button>
+      <button @click='slice'>slice</button>
+      <button @click='map'>map</button>
+      <button @click='filter'>filter</button>
+    </div>
+    <ul>
+      <li v-for="item in items" >
+        {{ item }}
+      </li>
+    </ul>  
+  </div>
+  
+  <!-- VUE导入 -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+  var example = new Vue({
+    el: '#example',
+    data: {
+      items: ['Foo','Bar','Baz'],
+      addValue:'match'
+    },
+    methods:{
+      concat(){
+        this.items =  this.items.concat(this.addValue)
+      },
+      slice(){
+        this.items =  this.items.slice(1)
+      },
+      map(){
+        this.items =  this.items.map(function(item,index,arr){
+          return index + item; 
+        })
+      },
+      filter(){
+        this.items =  this.items.filter(function(item,index,arr){
+          return (index > 0); 
+        })
+      }
+    }
+  })
+  </script>
+</body>
+
+</html>
