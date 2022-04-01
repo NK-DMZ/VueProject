@@ -1,4 +1,4 @@
-# com
+# 小米商城（早期学习vue第一个练手项目）
 
 > A Vue.js project
 
