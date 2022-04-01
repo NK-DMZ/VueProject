@@ -1,0 +1,15 @@
+{
+    "code": 200,
+    "message": "成功!",
+    "result": {
+        "comfortableNum": 16,
+        "comfortableOptionArr": [15, 23, 22, 21, 13, 14, 26],
+        "alarmOptionArr": [1, 3, 2, 8, 6, 3, 4],
+        "KeyPersonnel": [{
+            "id": 15,
+            "name": "杨文华",
+            "room": 305,
+            "photo": "http://www.sohu.com/a/523130389_260616"
+        }]
+    }
+}
